@@ -61,9 +61,41 @@ function fs.combine(basePath,localPath) end
 
 ---Opens a file so it can be read or written.
 -- @param path @class string
--- @return @class table
+-- @return @class FileHandle
 function fs.open(path,mode) end
 
-
-
+---@classdef FileHandle
+local h = {}
+---Closes the file handle, after which it can no longer be used
+function h.close()
+    
+end
+---Reads the next line from the file
+function h.readLine()
+    return ""
+end
+---Reads the all the text in the file
+function h.readAll()
+    return ""
+end
+---Writes a string of characters to the file exactly as they appear in the string data
+function h.write(data)
+    
+end
+---Writes a string of characters to the file, then appends an end-of-line character
+function h.writeLine(data)
+    
+end
+---Flushes the data to the specified file. (keeps the handle available afterwards)
+function h.flush()
+    
+end
+---A file opened in mode "rb" (binary read mode) exposes the following functions:
+function h.read()
+    return 1
+end
+---A file opened in mode "wb" (binary write mode) or "ab" (binary append mode) exposes the following functions:
+function h.write(byte)
+    
+end
 
