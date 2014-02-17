@@ -1,0 +1,11 @@
+--- Tries to retrieve the computer or turtles own location. 
+-- On success, returns the location of the turtle’s modem. 
+-- On failure (if no responses are received for timeout 
+-- seconds, by default 2), returns nil. If debug is true, 
+-- debug messages are printed.
+-- @param timeout @class number @optional
+-- @param debug @class bool @optional
+-- @return @class number
+-- @return @class number 
+-- @return @class number
+function gps.locate(timeout,debug) end
